@@ -16,6 +16,28 @@ public class FirstClass {
         System.out.println(s);
         System.out.println(10.0/4);
         System.out.println(i/j + " vs. nicht-ganzzahlig: "+ (i/(double)j));
+
+        i = 1;
+        j=1;
+        int a=i++;
+        int b = ++j;
+        System.out.println("a="+a+", b="+b);
+        --i;
+        i--;
+        System.out.println(i==a);
+        /*
+        ungleich 3!=a
+        groesser i>a
+        kleiner i<i (Ergebnis ist immer false)
+        groesser gleich i>=j
+        kleiner gleich j<=a
+        !true
+
+        boolean1  boolean2
+        boolean1 | boolean2
+         */
+
+
     }
 
 }
