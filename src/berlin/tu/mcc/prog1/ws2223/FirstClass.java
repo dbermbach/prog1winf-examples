@@ -7,24 +7,24 @@ public class FirstClass {
 
         int i = 5;
         int j;
-        j=(5+i)*(8-5);
-        i=j/20;
-        j=j%20;
+        j = (5 + i) * (8 - 5);
+        i = j / 20;
+        j = j % 20;
         //System.out.println("i = "+i);
-        System.out.println("j = "+j + " und das ist total toll oO");
-        String s = "i = "+i;
+        System.out.println("j = " + j + " und das ist total toll oO");
+        String s = "i = " + i;
         System.out.println(s);
-        System.out.println(10.0/4);
-        System.out.println(i/j + " vs. nicht-ganzzahlig: "+ (i/(double)j));
+        System.out.println(10.0 / 4);
+        System.out.println(i / j + " vs. nicht-ganzzahlig: " + (i / (double) j));
 
         i = 1;
-        j=1;
-        int a=i++;
+        j = 1;
+        int a = i++;
         int b = ++j;
-        System.out.println("a="+a+", b="+b);
+        System.out.println("a=" + a + ", b=" + b);
         --i;
         i--;
-        System.out.println(i==a);
+        System.out.println(i == a);
         /*
         ungleich 3!=a
         groesser i>a
@@ -39,5 +39,8 @@ public class FirstClass {
 
 
     }
+
+
+
 
 }
