@@ -33,7 +33,7 @@ public class FirstClass {
         b2 = b && b2; // and
         b2 = b || b2; // or
 
-        int c = 0;
+        int c = (int) (i = 0);
         c++;
         ++c;
         c--;
