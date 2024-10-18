@@ -90,7 +90,7 @@ a separate class somewhere. In those cases, an anonymous class can be created:
 is not allowed because the interface cannot be instantiated, since there is no
 implementation. What can be used is the following:
 => new InterfaceName(){add class content here}
-This creates a class that doesn't have a real classname and instatiates it for
+This creates a class that doesn't have a real classname and instantiates it for
 direct use in the following. This can be used with interfaces and abstract classes
 in the exact same way.
 */
