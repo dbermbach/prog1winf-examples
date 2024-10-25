@@ -67,8 +67,50 @@ public class FirstClass {
         i = i + 3;
         i += 3;// *= /= -= ...
         d = Math.sqrt(Math.PI * 42 * Math.random());
-
         String helloWorld = "hello " + "world" + d + d;
+
+        if (i < i2) {
+            System.out.println("i<i2");
+        } else {
+            System.out.println("i>=i2");
+        }
+
+        if (i < i2) {
+            System.out.println("<");
+        } else if (i > i2) {
+            System.out.println(">");
+        } else {
+            System.out.println("==");
+        }
+
+        switch (i) {
+            case 0:
+            case -1:
+            case -42:
+            case 1:
+                System.out.println(1);
+                System.out.println("i ist doof");
+                break;
+            case 2:
+                System.out.println(2);
+                break;
+            case 3:
+                System.out.println(3);
+                break;
+            default:
+                System.out.println("was Anderes");
+        }
+
+        //arrays
+        int [] arr;//deklarieren
+        arr = new int[3]; //initialisieren
+        arr[0] = 42;
+        arr[1] = 44;
+        arr[2] = 1;
+        System.out.println(arr[2]);
+        arr =  new int[]{2,233,32345,45,51};
+
+
 
 
     }
