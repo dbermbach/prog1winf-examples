@@ -31,13 +31,45 @@ public class FirstClass {
         b = false;
         c = '\n';
         System.out.println(b);
-        int i2 = 123;
+        int i2 = 2;
         long l2 = i2;
-        i2 = (int)l2;
-
+        i2 = (int) l2;
         int eingelesen = IOTools.readInt();
         System.out.println(eingelesen);
         System.out.println(IOTools.readLine("bitte ein string:"));
+        // 2. vorlesung
+        i2 = i2 + i2; // +-*/%
+        i2 = (i2 * 3) + 12;
+        i2 = 2 / 3; // ergebnis 0
+        i2 = 2 % 3; // ergebnis 2
+        d = 2.0 / 3.0; // ergebnis 0.6666...
+        d = 2 / 3.0;
+        d = (double) 2 / 3;
+        d = (double) (2 / 3);
+        d = (1.0 * 2) / 3;
+
+        i = 0;
+        i++;
+        ++i;
+        i--;
+        --i;
+        i2 = i++;  // i2 ist 0, i ist 1
+        i = 0;
+        i2 = ++i; // i2 und i sind 1
+        int i3, i4 = 13, i5 = 42;
+        i = i2 = i3 = i4 = i5;
+        boolean comp;
+        comp = i < i2; // > <= >= == !=
+        b = b && comp; // b&comp
+        b = b || comp; // b|comp
+        b = !comp;
+        b = (b && b || (!b && b) || b) & b && i < i2;
+        i = i + 3;
+        i += 3;// *= /= -= ...
+        d = Math.sqrt(Math.PI * 42 * Math.random());
+
+        String helloWorld = "hello " + "world" + d + d;
+
 
     }
 
