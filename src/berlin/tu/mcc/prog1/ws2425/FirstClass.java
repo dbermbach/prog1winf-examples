@@ -102,15 +102,55 @@ public class FirstClass {
         }
 
         //arrays
-        int [] arr;//deklarieren
+        int[] arr;//deklarieren
         arr = new int[3]; //initialisieren
         arr[0] = 42;
         arr[1] = 44;
         arr[2] = 1;
         System.out.println(arr[2]);
-        arr =  new int[]{2,233,32345,45,51};
+        //tiefe kopie
+        int[] arr2 = new int[arr.length];
+        arr2[0] = arr[0];
+        arr2[1] = arr[1];
+        arr2[2] = arr[2];
+        arr = new int[]{2, 233, 32345, 45, 51};
+        //2d array
+        int[][] array2d = new int[2][3];
+        array2d[0] = new int[42];
 
+        for (int j = 0; j < 42; j++) {
+            System.out.println("iteration " + j + ": Hello world!");
+        }
+        //tiefe kopie mit schleife
+        int[] langesArray = {1, 2, 3, 4, 5, 6, 76, 7, 98};
+        int[] target = new int[langesArray.length];
+        for (int j = 0; j < langesArray.length; j++) {
+            target[j] = langesArray[j];
+        }
+        //rueckwaerts
+        for (int j = target.length - 1; j >= 0; j--) {
+            System.out.println(target[j]);
+        }
+        //vorwaerts
+        for (int j = 0; j < target.length; j++) {
+            System.out.println(target[j]);
+        }
+        //und als for each
+        for (int value : target) {
+            System.out.println(value);
+        }
 
+        //solange bedingung erfüllt ist, tue folgendes
+        double rand;
+        while (/*bedingung*/ (rand = Math.random()) > 0.2) {
+            //statements
+            System.out.println(rand);
+        }
+        //tue folgendes, solange bedingung erfüllt
+        do {
+            //statements
+            System.out.println(rand);
+        } while ((rand = Math.random()) > 0.2);
 
 
     }
