@@ -152,6 +152,15 @@ public class FirstClass {
             System.out.println(rand);
         } while ((rand = Math.random()) > 0.2);
 
+        for(int j=0;j<10;j++){
+            if(j==2||j==5) {
+                System.out.println("continue!");
+                continue;//break;
+            }
+            System.out.println(j);
+        }
+
+
 
     }
 
