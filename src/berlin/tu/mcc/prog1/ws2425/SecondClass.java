@@ -15,6 +15,19 @@ public class SecondClass {
     public static int add(int a, int b) {
         return a + b;
     }
+    // double double
+    // int long
+    // long int
+    // int int
+
+
+    public static int add(int a, int b, int c){
+        return addNumbers(a,b,c);
+    }
+
+    public static double add(double a, double b){
+        return a+b;
+    }
 
     public static int addNumbers(int...a) {
         int res = 0;
