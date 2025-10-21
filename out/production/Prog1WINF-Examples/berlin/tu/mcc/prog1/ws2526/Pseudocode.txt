@@ -1,0 +1,7 @@
+1) Input ist eine ungerade Anzahl an Zahlen. Finde den Wert, für den gilt, dass
+die Hälfte der Zahlen größer und die andere Hälfte kleiner als er ist (Median).
+2) Input ist eine Menge an Zahlen. Finde den häufigsten Wert oder melde 'unentschieden'.
+3) Ziehe ein Spannbettlaken auf ein 1,40m-Bett.
+4) Input ist eine Menge an drei Tönen. Identifiziere, ob und um welchen Dur-, Moll- oder
+verminderten Akkord es sich handelt, oder ob es sich um einen übermäßigen Akkord handelt.
+Gib sonst 'unknown' zurück.
