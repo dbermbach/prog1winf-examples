@@ -13,7 +13,7 @@ public class FirstClass {
         mehrzeiliger Kommentar
          */
         int i;
-        i=5;
+        i = 5;
         int j = 6;
         //byte, short, int, long => Ganzzahlen
         // float, double => Gleitkommazahlen
@@ -32,5 +32,30 @@ public class FirstClass {
         System.out.println(nameOfEmployee);
         b = IOTools.readBoolean("bitte boolean eingeben");
         System.out.println(b);
+        long meinLong = i;
+        i = (int) meinLong;
+        System.out.println("d=" + d);
+        System.out.println("d als int=" + ((int) d));
+
+        meinLong = i + 5; // - * / %
+        System.out.println(3 / 5);
+        System.out.println(3.0 / 5.0);
+        meinLong = i * i + (1 + 34) * i - i + 12;
+        System.out.println(123 + 43);
+        System.out.println("als string:" + 123 + 43);
+        System.out.println("als string:" + (123 / 43));
+        int m, n = 4, k = 1;
+        int nameDerErstenVariable = 0, nameDerZweitenVariable = 1;
+        nameDerErstenVariable = nameDerErstenVariable + nameDerZweitenVariable;
+        nameDerErstenVariable += nameDerZweitenVariable; //macht das gleiche
+        i = 1;
+        m = i++;
+        m = ++i;
+        m = i--;
+        m = --i;
+
+        boolean b2 = i==m; // < > <= >= !=
+
+
     }
 }
