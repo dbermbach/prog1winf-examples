@@ -54,7 +54,68 @@ public class FirstClass {
         m = i--;
         m = --i;
 
-        boolean b2 = i==m; // < > <= >= !=
+        boolean b2 = i == m; // < > <= >= !=
+
+        b = b2 && b; // || !
+        b = b2 || b;
+        b = !(b2 && b);
+
+        m = i = 1;
+
+        double dRand = Math.ceil(Math.random());
+
+        if (dRand == 0) {
+            System.out.println("oh, it was zero!1!111!");
+        } else {
+            System.out.println("as expected it was 1 :-)");
+        }
+
+        if (nameDerZweitenVariable == 0)
+            System.out.println("oh, it was zero!1!111!");
+        else
+            System.out.println("as expected it was 1 :-)");
+
+        if (b) {
+            int jjj=42+i;
+            if (b2) {
+                System.out.println("b und b2 sind true");
+                System.out.println(jjj);
+            } else {
+                System.out.println("b ist true, b2 nicht");
+            }
+        }
+        int jjj = 43;
+        if (b) {
+            //do sth
+        } else if (b2) {
+            //do sth else
+        } else if (Math.random() < 0.5) {
+            //do sth. else again
+        } else {
+            System.out.println("b was false, b2 was false, rnd nmbr was >= 0.5");
+        }
+
+        //switch case
+        switch (i){
+            case -2:
+            case -1:
+                System.out.println("was -1 or -2");
+                break;
+            case 0:
+                System.out.println("0");
+                System.out.println("immer noch 0");
+                break;
+            case 1:
+                System.out.println("1");
+                break;
+            case 42:
+                System.out.println("42"); break;
+
+            case 185:
+                System.out.println("185");break;
+            default:
+                System.out.println("i was " +i);
+        }
 
 
     }
