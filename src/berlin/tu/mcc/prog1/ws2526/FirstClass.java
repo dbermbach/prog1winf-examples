@@ -192,7 +192,24 @@ public class FirstClass {
 
     }
 
+    public static void foo(int bar){
+
+    }
+
+
+    public static void foo(double bar){
+
+    }
+
+    // int, int, int
+    // int, double, int
+    // int, int, double
+    // int, float, float
+
+
+
     public static void printIntArray(int[] foo) {
+        foo(123);
         if (foo == null) {
             return;
         }
