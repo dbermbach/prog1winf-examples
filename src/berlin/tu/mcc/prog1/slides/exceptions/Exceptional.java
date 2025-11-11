@@ -6,18 +6,16 @@ public class Exceptional {
         imDevastated();
     }
 
-    static void howCouldThisHappen() {
-        ohNoSomethingWentWrong();
-    }
-
     static void imDevastated() {
         howCouldThisHappen();
+    }
+
+    static void howCouldThisHappen() {
+        ohNoSomethingWentWrong();
     }
 
     static void ohNoSomethingWentWrong() {
         Exception e = null;
         e.printStackTrace();
-
     }
-
 }

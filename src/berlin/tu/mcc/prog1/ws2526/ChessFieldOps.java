@@ -1,6 +1,15 @@
 package berlin.tu.mcc.prog1.ws2526;
 
+/**
+ * This class provides methods for analyzing the chessfield positions
+ * that can be reached in n steps starting from a specified start position
+ * @author David
+ * @version 0.1
+ * @see FirstClass
+ *
+ */
 public class ChessFieldOps {
+
 
     public static void main(String[] args) {
         // add to first array dimension to go down, add to second dimension to go right
@@ -8,8 +17,8 @@ public class ChessFieldOps {
         int[][] chessField = buildChessField();
         markStart(startLR, startUD, chessField);
         printChessField(chessField);
-         markPositionsReachableForPawn(startLR,startUD, chessField, 2, false);
-        //markPositionsReachableForKnight(startLR,startUD, chessField, 1);
+        //markPositionsReachableForPawn(startLR,startUD, chessField, 2, false);
+        markPositionsReachableForKnight(startLR,startUD, chessField, 3);
         markStart(startLR, startUD, chessField);
         System.out.println("result:");
         printChessField(chessField);
@@ -21,7 +30,7 @@ public class ChessFieldOps {
     }
 
     public static void markPositionsReachableForKnight(char startLR, char startUD, int[][] chessField, int noOfSteps) {
-        //pawns can go one step in Up/Down direction, Left/Right stays constant
+
         if (noOfSteps <= 0) {
           //  System.out.println("no more steps");
             return;
@@ -91,6 +100,13 @@ public class ChessFieldOps {
 
     }
 
+    /**
+     * checks whether a specified position is on the chess field
+     * @param lrArrayIndex left-right position as array index number (i.e., [0;array.length-1])
+     * @param udArrayIndex up-down position as array index number (i.e., [0;array.length-1])
+     * @param chessField the chess field which shall be checked
+     * @return true if the position is on the chess field, false otherwise
+     */
     public static boolean isOnField(int lrArrayIndex, int udArrayIndex, int[][] chessField) {
         if (lrArrayIndex >= chessField.length || lrArrayIndex < 0 || udArrayIndex >= chessField[0].length || udArrayIndex < 0) {
             return false;
