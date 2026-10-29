@@ -58,7 +58,25 @@ public class FirstClass {
         intVariable--;
         --intVariable;
 
-        boolean result = intVariable>0; // >= < <= == !=
+        boolean result = intVariable > 0; // >= < <= == !=
+
+        System.out.println("5" + (2 + 2)); //ergibt "54"
+        System.out.println(2 + 2 + "2"); // ergibt "42"
+        String s = 2 + 2 + 2 + "2";
+
+        boolean b1 = true, b2 = true, b3, b4;
+        result = b1 && (intVariable++ > 32); // and
+        result = b1 || b2; //or
+        result = !b1;
+        result = !result && (b1 || b2 & result) & !b1 && (1 + 2 + 3 + 4 + 5 + 5 + 2 + 32 + 34 > 11) || false;
+
+        b1 = b2 = b3 = !(b4 = true);
+
+        intVariable = intVariable + 7;
+        intVariable += 7;
+
+        System.out.println("dritte wurzel aus 42 = " + Math.cbrt(42));
+        
 
     }
 
