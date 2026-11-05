@@ -153,7 +153,7 @@ public class FirstClass {
         arr[1] = 2;
         arr[2] = 1;
         arr[3] = 1;
-        System.out.println("array an stelle 2="+arr[2]);
+        System.out.println("array an stelle 2=" + arr[2]);
         int jj2 = jj;
         jj = 5;
         System.out.println(jj2);
@@ -163,7 +163,36 @@ public class FirstClass {
         arr[0] = 5;
         System.out.println(arr[0]);
         System.out.println(arr2[0]);
+        int[] meinArray = {1, 2, 3, 43};
+        double[][] dArray = new double[2][4];
+        dArray[0][1] = 3.14;
+        System.out.println(dArray[0][1]);
+        dArray[0] = new double[42];
+        double[] doubleArray1d = dArray[1];
+        long[][] lArray = {{1, 2}, {1, 3}, {4, 2, 5}};
 
+        float[] fArr = new float[234234];
+        for (int k = 0; k < fArr.length; k++) {
+            fArr[k] = 3 * k;
+        }
+        for (int k = 0; k < fArr.length; k++) {
+            if (k == 17 || k == 34) continue;
+            System.out.println(fArr[k]);
+            if(fArr[k]>234234234) break;
+        }
+
+        for (float value : fArr) {
+            System.out.println(value);
+        }
+        
+        double abstandNachVorne = 42;
+        while (abstandNachVorne > 1) {
+            //gehe Schritt vorwärts
+        }
+
+        do {
+            //gehe Schritt nach vorne
+        } while (abstandNachVorne > 1);
 
 
     }
