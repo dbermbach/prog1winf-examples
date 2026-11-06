@@ -186,8 +186,10 @@ public class FirstClass {
         }
         
         double abstandNachVorne = 42;
+        int counter = 37;
         while (abstandNachVorne > 1) {
             //gehe Schritt vorwärts
+            counter--;
         }
 
         do {
